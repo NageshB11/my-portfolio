@@ -270,36 +270,121 @@
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-            <div class="contact-container">
-                <div class="contact-info-direct">
-                    <p><i class="fas fa-phone-alt"></i> +91 8329803246</p>
-                    <p><i class="fas fa-envelope"></i> nageshballurkar2003@gmail.com</p>
+        <section id="contact" class="section contact-section">
+            <div class="contact-header">
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities
+                    to be part of your vision.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Left Side: Contact Information -->
+                <div class="contact-info-section">
+                    <div class="contact-intro">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out through any of the following channels. I typically respond within 24
+                            hours.</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:nageshballurkar2003@gmail.com">nageshballurkar2003@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+918329803246">+91 8329803246</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Nanded, Maharashtra, India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-connect">
+                        <h4>Connect on Social Media</h4>
+                        <div class="social-links-contact">
+                            <a href="https://github.com/NageshB11" target="_blank" class="social-btn" title="GitHub">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/nagesh-ballurkar-9362a12b7/" target="_blank"
+                                class="social-btn" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="mailto:nageshballurkar2003@gmail.com" class="social-btn" title="Email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="availability-badge">
+                        <div class="status-indicator"></div>
+                        <span>Available for opportunities</span>
+                    </div>
                 </div>
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
-                    <!-- Replace with your Access Key -->
-                    <input type="hidden" name="access_key" value="6d9496a5-3a16-4863-afc9-228052ed5f10">
 
-                    <!-- Form Inputs with proper styling -->
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required placeholder=" ">
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required placeholder=" ">
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" required placeholder=" "></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
+                <!-- Right Side: Contact Form -->
+                <div class="contact-form-section">
+                    <h3>Send a Message</h3>
+                    <p class="form-description">Have a question or want to work together? Fill out the form below.</p>
 
-                    <!-- Honeypot Spam Protection -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="6d9496a5-3a16-4863-afc9-228052ed5f10">
 
-                    <button type="submit" class="btn primary-btn">Send Message</button>
-                </form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" ">
+                                <label for="name">Full Name *</label>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" ">
+                                <label for="email">Email Address *</label>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" ">
+                            <label for="subject">Subject</label>
+                            <i class="fas fa-tag form-icon"></i>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder=" " rows="6"></textarea>
+                            <label for="message">Your Message *</label>
+                            <i class="fas fa-comment-dots form-icon"></i>
+                        </div>
+
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
